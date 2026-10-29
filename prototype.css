@@ -2,3 +2,6 @@
 
 @media(min-width:761px){.mobile-menu{display:none!important}}
 .demo-bar label:has(#person-select) select{max-width:180px}.demo-bar{flex-wrap:wrap}button.light{background:white!important;color:#657954!important;border:1px solid #dfe6d4!important}
+
+/* Keep member tabs independent of leader sidebar navigation rules. */
+.member-view nav.member-tabs{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;padding:0 25px;overflow-x:auto;min-height:60px}.member-view nav.member-tabs a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:60px;padding:17px 14px!important;font-size:12px!important;border-radius:0;position:relative}.member-view nav.member-tabs a[aria-current=page]{border-bottom:3px solid #a5b67a;background:transparent;box-shadow:none}.member-view nav.member-tabs a:before,.member-view nav.member-tabs a:after{display:none}.member-view .member-top .brand{gap:12px}.member-view .member-top .brand img{object-fit:contain}.member-view .member-content{width:100%}@media(max-width:760px){.member-view nav.member-tabs{padding:0 10px;gap:0}.member-view nav.member-tabs a{font-size:10px!important;padding:14px 12px!important;min-height:50px}}
