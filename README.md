@@ -15,3 +15,10 @@ Cairo font bundled under SIL Open Font License (assets/fonts/OFL.txt). Based on 
 Open Teams & Sectors, open a team, then use its Members, Appointments, Job titles and Patrols tabs. Team leaders define their own job labels (including patrol leader, assistant patrol leader and budget officer) and separately choose members, permissions and patrol membership. Patrol officers are automatically included in their own patrol, and all selections are limited to the same team. Job names do not automatically grant budget or dashboard permissions.
 
 Sector preview supports Boys, Girls and Leaders. Boys shows Cubs, Junior and Advanced; Girls shows Buds, Flowers, Guides and Rangers as defined in the demo team structure. The administrative Goals/Curricula area is visible to group and sector leaders; member-facing published goals remain in the member portal.
+
+
+## Curriculum submission and sector review
+
+Team leaders have a dedicated My Curricula & Assignments section, both in navigation and inside their team. The sector/group defines the assignment (team, objective, subject, date and instructions). Team leaders can submit written preparation and practice with two distinct PNG/JPEG/WebP images up to 5 MB each. Images are normalized/compressed locally in this static demo and saved only in the visitor's browser; they are not sent to a server. Browser quota failures are reported instead of claiming persistent success.
+
+Submitting moves the task to Pending and does not grant a score. Only the matching sector leader reviews both images and assigns an integer score from 0 to 100 (e.g. 10, 30 or 100), or returns the task with a required reason. Pending/approved submissions cannot be overwritten by the team leader. Returned assignments can be corrected and resubmitted. Group leaders can inspect evidence but cannot impersonate the sector reviewer through task controls. The private Django application enforces the same workflow server-side and stores evidence in protected media.
