@@ -1,0 +1,46 @@
+/* Preserve the original badge, including its lower knot, without changing pixels. */
+.logo-crop,.member-logo,.logo-frame{position:relative;display:block;flex-shrink:0;overflow:hidden;isolation:isolate;background:#fff;border:1px solid #ffffff45;border-radius:14px;aspect-ratio:74/79}
+.logo-crop>img,.member-logo>img,.logo-frame>img{position:absolute!important;display:block;width:172.973%!important;height:162.025%!important;max-width:none!important;left:-36.486%!important;top:-29.114%!important;object-fit:fill!important;border-radius:0!important;box-shadow:none!important;transform-origin:center;filter:none;transition:filter .25s}
+.brand .brand-mark.logo-crop{width:60px;height:64px;box-shadow:0 3px 12px #092d2420;border-radius:12px}
+.login-brand>.logo-crop{width:70px;height:75px;border-radius:14px;border-color:#e6ebdc}
+.member-brand .member-logo{width:61px;height:65px;border-radius:13px;border-color:#e5eadb}
+.member-top .brand .logo-frame{width:61px;height:65px;border-radius:13px;border-color:#e5eadb}
+.brand:hover .logo-crop>img,.member-brand:hover .member-logo>img,.member-top .brand:hover .logo-frame>img{filter:saturate(1.08) contrast(1.02)}
+:is(#splash,#intro).brand-splash{position:fixed;inset:0;z-index:150;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;padding:25px;background:radial-gradient(ellipse at 50% 40%,#2b6c51 0%,#164e3b 35%,#0b3028 80%);color:#f0e3b6;text-align:center;perspective:1100px}
+:is(#splash,#intro).brand-splash[hidden]{display:none!important}
+:is(#splash,#intro).brand-splash:before{content:'';position:absolute;inset:-40%;background:conic-gradient(from 0deg,transparent 0deg,#e2ce8009 25deg,transparent 60deg,transparent 180deg,#d5bd6f08 210deg,transparent 245deg);animation:brand-light-orbit 38s linear infinite;pointer-events:none}
+:is(#splash,#intro).brand-splash:after{content:'';position:absolute;width:650px;height:650px;max-width:none;border-radius:50%;border:1px solid #d8cd8a0c;box-shadow:0 0 0 80px #d8cd8a03,0 0 0 160px #d8cd8a02;pointer-events:none}
+:is(#splash,#intro).brand-splash .splash-grid{position:absolute;inset:0;opacity:.18;background-image:radial-gradient(#e2d6a9 0.6px,transparent 0.6px);background-size:35px 35px;mask-image:radial-gradient(ellipse at center,black,transparent 70%)}
+:is(#splash,#intro).brand-splash .splash-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;padding:20px;width:min(100%,550px)}
+:is(#splash,#intro).brand-splash .splash-kicker{display:block;color:#c7d5ac;font-size:10px;font-weight:600;letter-spacing:3px;margin:0 0 37px;animation:brand-copy-enter .65s .15s both}
+:is(#splash,#intro).brand-splash .splash-emblem{position:relative;display:grid;place-items:center;width:240px;height:235px;margin:0 auto 24px;perspective:800px}
+:is(#splash,#intro).brand-splash .splash-badge.logo-crop{width:148px;height:158px;border-radius:27px;background:white;border:1px solid #f0e5c0;box-shadow:0 18px 55px #031b2460,0 0 0 9px #f5e7b408,0 0 75px #d7ca7d1a;transform-style:preserve-3d;animation:brand-badge-arrive 1.15s cubic-bezier(.16,1,.3,1) both}
+:is(#splash,#intro).brand-splash .splash-badge>img{animation:brand-badge-float 4.5s 1.15s ease-in-out infinite}
+:is(#splash,#intro).brand-splash .splash-badge:after{content:'';position:absolute;inset:-40% -100%;background:linear-gradient(110deg,transparent 43%,#ffffff05 46%,#ffffffa0 50%,#ffffff15 54%,transparent 58%);transform:translateX(-70%);pointer-events:none;animation:brand-badge-sheen 5.5s 1.05s ease-in-out infinite}
+:is(#splash,#intro).brand-splash .orbit{position:absolute;inset:8px 10px;border:1px solid #e3d3a64d;border-radius:50%;box-shadow:none;animation:brand-light-orbit 14s linear infinite}
+:is(#splash,#intro).brand-splash .orbit:after{content:'';position:absolute;width:7px;height:7px;top:27px;left:25px;background:#eddb9b;border-radius:50%;box-shadow:0 0 16px #f3d781a0}
+:is(#splash,#intro).brand-splash .orbit-two{inset:-9px -6px;border:1px dashed #e3d3a624;animation-direction:reverse;animation-duration:27s}
+:is(#splash,#intro).brand-splash .orbit-two:after{width:4px;height:4px;top:39px;left:28px;opacity:.7}
+:is(#splash,#intro).brand-splash h1{font-size:56px;font-weight:800;letter-spacing:-1.5px;line-height:1.4;color:#f0e3b6;margin:0;animation:brand-copy-enter .85s .35s both}
+:is(#splash,#intro).brand-splash h1 span{display:block;color:#bdcfa8;font-size:13px;letter-spacing:0;font-weight:400;margin-top:6px}
+:is(#splash,#intro).brand-splash .splash-tagline{color:#a9c0a4;font-size:12px;line-height:1.9;margin:17px 0 0;animation:brand-copy-enter .85s .6s both}
+:is(#splash,#intro).brand-splash .splash-progress{width:110px;height:2px;border-radius:5px;background:#e5dbaf18;overflow:hidden;margin:24px auto 19px;animation:brand-copy-enter .8s .8s both}
+:is(#splash,#intro).brand-splash .splash-progress>span{display:block;height:100%;background:linear-gradient(90deg,#93b07b,#ead69a);transform-origin:right;animation:brand-progress 2.8s .25s both}
+:is(#splash,#intro).brand-splash .splash-start{display:inline-flex;align-items:center;justify-content:center;gap:22px;background:#e9dcae!important;color:#25513e!important;border:1px solid #f4e8c4!important;border-radius:9px;font-size:12px!important;padding:11px 28px!important;box-shadow:0 8px 25px #092c2926;transition:transform .2s,box-shadow .2s;animation:brand-copy-enter .8s .7s both}
+:is(#splash,#intro).brand-splash .splash-start:hover{transform:translateY(-2px);box-shadow:0 12px 30px #071f2535}
+:is(#splash,#intro).brand-splash .splash-start:focus-visible{outline:3px solid #f5e7b9;outline-offset:6px}
+:is(#splash,#intro).brand-splash .splash-bottom{position:absolute;bottom:24px;left:20px;right:20px;z-index:2;color:#7fa28d;font-size:9px;letter-spacing:.5px;animation:brand-copy-enter .8s .9s both}
+.splash-stars{position:absolute;inset:0;pointer-events:none}.splash-stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#dfcc8b;opacity:0;animation:brand-star 4.4s ease-in-out infinite}.splash-stars i:nth-child(1){top:24%;left:30%}.splash-stars i:nth-child(2){top:40%;right:21%;animation-delay:1.2s;width:4px;height:4px}.splash-stars i:nth-child(3){bottom:26%;left:22%;animation-delay:2.2s}.splash-stars i:nth-child(4){top:17%;right:36%;animation-delay:3s}.splash-stars i:nth-child(5){bottom:20%;right:32%;animation-delay:.6s}
+:is(#splash,#intro).brand-splash.leaving{animation:brand-scene-leave .42s ease both;pointer-events:none}
+body.brand-splash-open{overflow:hidden}
+@keyframes brand-badge-arrive{0%{opacity:0;transform:translate3d(0,38px,-70px) rotateY(-38deg) rotateZ(-9deg) scale(.72)}65%{opacity:1;transform:translate3d(0,-5px,0) rotateY(5deg) rotateZ(2deg) scale(1.035)}100%{opacity:1;transform:translate3d(0,0,0) rotateY(0) rotateZ(0) scale(1)}}
+@keyframes brand-badge-float{0%,100%{transform:translateY(0) rotate(-.7deg)}50%{transform:translateY(-3px) rotate(.7deg)}}
+@keyframes brand-badge-sheen{0%,55%{transform:translateX(-70%);opacity:0}60%{opacity:.65}85%,100%{transform:translateX(70%);opacity:0}}
+@keyframes brand-copy-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes brand-light-orbit{to{transform:rotate(360deg)}}
+@keyframes brand-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes brand-star{0%,100%{opacity:0;transform:translateY(8px) scale(.7)}50%{opacity:.7;transform:translateY(-12px) scale(1.25)}}
+@keyframes brand-scene-leave{to{opacity:0;transform:scale(1.025);filter:blur(3px)}}
+@media(max-width:750px){.brand .brand-mark.logo-crop{width:52px;height:56px}.member-brand .member-logo,.member-top .brand .logo-frame{width:49px;height:53px;border-radius:11px}:is(#splash,#intro).brand-splash .splash-emblem{width:215px;height:211px;margin-bottom:21px}:is(#splash,#intro).brand-splash .splash-badge.logo-crop{width:132px;height:141px;border-radius:23px}:is(#splash,#intro).brand-splash h1{font-size:46px}:is(#splash,#intro).brand-splash .splash-kicker{margin-bottom:30px}:is(#splash,#intro).brand-splash .splash-tagline{font-size:11px}}
+@media(max-height:680px){:is(#splash,#intro).brand-splash .splash-kicker{margin-bottom:21px}:is(#splash,#intro).brand-splash .splash-emblem{width:190px;height:185px;margin-bottom:13px}:is(#splash,#intro).brand-splash .splash-badge.logo-crop{width:116px;height:124px;border-radius:21px}:is(#splash,#intro).brand-splash h1{font-size:42px}:is(#splash,#intro).brand-splash .splash-tagline{margin-top:10px}:is(#splash,#intro).brand-splash .splash-progress{margin:15px auto}:is(#splash,#intro).brand-splash .splash-bottom{bottom:12px}}
+@media(prefers-reduced-motion:reduce){:is(#splash,#intro).brand-splash,:is(#splash,#intro).brand-splash:before,:is(#splash,#intro).brand-splash *{animation:none!important;transition:none!important;transform:none!important}:is(#splash,#intro).brand-splash .splash-badge:after,.splash-stars{display:none}:is(#splash,#intro).brand-splash .splash-start:hover{transform:none}}
